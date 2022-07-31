@@ -39,7 +39,7 @@ body{
     margin-left: 45rem;
     align-items: center;
     align-content: center;
-    height: 600px;
+    height: 650px;
     width: 350px;
     background-color: var(--secondary-light-color)
 }
@@ -87,12 +87,14 @@ body{
 }
 
 .duration-control{
+    margin: 0%;
     height: 70px;
     width: 350px;
     background-color: #e5e5f0;
 }
 
 .description{
+
     font-size: var(--font-size-xsm);
     padding-top: 1.5rem;
     text-align: center;
