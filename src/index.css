@@ -40,12 +40,14 @@ body{
     align-items: center;
     align-content: center;
     height: 600px;
-    width: 400px;
+    width: 350px;
     background-color: var(--secondary-light-color)
 }
 
 
 .album-image{
+    height: 350px;
+    width: 350px;
     opacity: 0.8;
 }
 
@@ -78,14 +80,22 @@ body{
     color: rgb(212, 207, 207);
 }
 
+.playlist{
+    position: relative;
+    bottom: 21rem;
+    left: 18.5rem;
+}
+
 .duration-control{
-    height: 90px;
-    width: 400px;
+    height: 70px;
+    width: 350px;
     background-color: #e5e5f0;
 }
 
 .description{
-    padding-top: 2rem;
+    font-size: var(--font-size-xsm);
+    padding-top: 1.5rem;
     text-align: center;
     color: var(--metric-color);
+    font-weight:bold;
 }
