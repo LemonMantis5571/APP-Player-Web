@@ -1,0 +1,91 @@
+/* Import font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+/* custom properties */
+:root{
+    --primary-background-color:#8685a2;
+    --secondary-background-color:#c1b9d3;
+    --light-color:#ffff;
+    --secondary-light-color:#ececf3;
+    --metric-color:#411583;
+    --font-family: 'Roboto', sans-serif;
+    --font-size-xsm: 1.2rem;
+    --font-size-sm: 1.6rem;
+    --font-size-md: 2.4rem;
+    --font-size-lg: 3rem;
+    --font-size-xl: 4rem;
+    --gap: 2rem;
+    --margin-sm: 2rem;
+    --margin-md: 3rem;
+    --item-min-height-sm: 20rem;
+    --item-min-height-md: 30rem;
+    /* Tamaño de ancho: 350px (reproductor), 275px (playlist). */
+    /* Tamaño de covers: 350x350px aprox. */
+}
+
+
+body{
+    font-family: var(--font-family);
+    margin: auto;
+    padding: 0%;
+    background-color: rgb(22, 21, 21);
+    
+}
+
+.card{
+    box-shadow: 10px 10px 10px 10px #0A0A08;
+    margin-top: 10rem;
+    margin-left: 45rem;
+    align-items: center;
+    align-content: center;
+    height: 600px;
+    width: 400px;
+    background-color: var(--secondary-light-color)
+}
+
+
+.album-image{
+    opacity: 0.8;
+}
+
+.musicplayer{
+    margin-top: 1rem;
+    color: #0A0A08;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.autor{
+    color: rgb(90, 88, 88) !important;
+}
+.iconify--ic {
+    padding: 5px 5px 5px 5px;
+    cursor: pointer;
+}
+
+.iconify--ic:hover{
+    color: rgb(212, 207, 207);
+
+}
+
+.iconify--entypo {
+    padding: 5px 5px 5px 5px;
+    cursor: pointer;
+}
+
+.iconify--entypo:hover{
+    color: rgb(212, 207, 207);
+}
+
+.duration-control{
+    height: 90px;
+    width: 400px;
+    background-color: #e5e5f0;
+}
+
+.description{
+    padding-top: 2rem;
+    text-align: center;
+    color: var(--metric-color);
+}
