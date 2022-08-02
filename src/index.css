@@ -37,8 +37,17 @@ ul{
     list-style: none;
 }
 
+hr{
+    margin-left: 0%;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    max-width: 11rem;
+    opacity: 0.2;
+}
+
 .card{
-    box-shadow: 10px 10px 10px 10px #0A0A08;
+    box-shadow: 10px 10px 10px 10px #252523;
     margin-top: 10rem;
     margin-left: 45rem;
     align-items: center;
@@ -131,6 +140,6 @@ ul{
 ul  > li{
     position: relative;
     top: 1rem;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     text-align: left;
 }
