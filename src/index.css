@@ -80,7 +80,7 @@ body{
     color: rgb(212, 207, 207);
 }
 
-.playlist{
+.playlist-icon{
     position: relative;
     bottom: 21rem;
     left: 18.5rem;
@@ -100,4 +100,24 @@ body{
     text-align: center;
     color: var(--metric-color);
     font-weight:bold;
+}
+
+.playlist{
+    position: relative;
+    left: 22rem;
+    bottom: 42rem;
+    height: 100px;
+    width: 100px;
+    background-color: #0A0A08;
+
+}
+
+.playlist-transform {
+    position: relative;
+    left: 22rem;
+    bottom: 42rem;
+    height: 100px;
+    width: 100px;
+    background-color: #0A0A08;
+    transition: all 2s ease;
 }
