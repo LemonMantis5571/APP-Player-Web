@@ -1,20 +1,16 @@
 var t = document.getElementById("playlist-icon")
 var t2 = document.getElementById("playlist")
+var s1 = document.getElementById("first")
+var s2 = document.getElementById("second")
+var s3 = document.getElementById("third")
+var s4 = document.getElementById("fourth")
 
-let playlist_active = false;
-
-
-// t.addEventListener("click", (e) => {
-//     e.stopPropagation();
-//     if (playlist_active == false) {
-//         t2.classList.add('playlist-transform')
-//         playlist_active = true
-//         console.log(playlist_active)
-//     }
-
-// });
 t.addEventListener("click", transision);
 
 function transision() {
     t2.classList.toggle("playlist-transform")
+    s1.classList.toggle("hide")
+    s2.classList.toggle("hide")
+    s3.classList.toggle("hide")
+    s4.classList.toggle("hide")
 }
