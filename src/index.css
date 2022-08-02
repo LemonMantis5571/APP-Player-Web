@@ -25,6 +25,14 @@
 }
 
 
+li{
+    cursor: pointer;
+
+}
+
+li:hover{
+    color: rgb(25, 25, 214);
+}
 body{
     font-family: var(--font-family);
     margin: auto;
@@ -44,10 +52,11 @@ hr{
     border-radius: 5px;
     max-width: 11rem;
     opacity: 0.2;
+    
 }
 
 .card{
-    box-shadow: 10px 10px 10px 10px #252523;
+    box-shadow: 10px 10px 10px 10px #0A0A08;
     margin-top: 10rem;
     margin-left: 45rem;
     align-items: center;
@@ -128,12 +137,21 @@ hr{
 
 }
 
-.song-list{
-    
+.hide-div{
+  position: relative;
+  left: 22rem;
+  bottom: 40.8rem;
+  height: 200px;
+  width: 300px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 2s ease;
 }
 
 .hide{
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 2s ease;
 }
 
 

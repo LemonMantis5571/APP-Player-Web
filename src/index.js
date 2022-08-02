@@ -6,9 +6,14 @@ var s3 = document.getElementById("third")
 var s4 = document.getElementById("fourth")
 
 t.addEventListener("click", transision);
+t.addEventListener("click", hide);
 
 function transision() {
     t2.classList.toggle("playlist-transform")
+}
+
+function hide() {
+    t2.classList.toggle("hide-div")
     s1.classList.toggle("hide")
     s2.classList.toggle("hide")
     s3.classList.toggle("hide")
