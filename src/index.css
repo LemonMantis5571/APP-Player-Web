@@ -30,6 +30,10 @@ li{
 
 }
 
+button{
+    border: 0;
+}
+
 li:hover{
     color: rgb(25, 25, 214);
 }
@@ -103,14 +107,22 @@ hr{
     color: rgb(224, 218, 218);
 }
 .fa-forward{
+    cursor: pointer;
     position: relative;
     left: 15px;
     
 }
+.fa-forward:hover{
+    color: rgb(224, 218, 218);
+}
 
 .fa-backward{
+    cursor: pointer;
     position: relative;
     right: 15px;
+}
+.fa-backward:hover{
+    color: rgb(224, 218, 218);
 }
 
 .iconify--ic {

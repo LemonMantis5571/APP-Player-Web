@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="./index.css">
+  <script type="module" src="./audio.js"></script>
   <script type="module" src="./index.js"></script>
   <script src="https://kit.fontawesome.com/2891e7bec4.js" crossorigin="anonymous"></script>
   <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
@@ -13,7 +14,6 @@
 </head>
 <body>
       <div class="card">
-
         <div class="album">
           <img src="./assets/ab6761610000e5eb9f73197444a8a6b016f4a546_400x350.png" alt="" class="album-image" >
           <div class="playlist-icon" id="playlist-icon">
@@ -21,13 +21,16 @@
           
         </div>
 
+        <audio src="./assets/blackpink.mp3" id="audio"></audio>
+
+
         <div class="musicplayer">
           <h2><strong>Lovesick Girls</strong> </h2>
           <h4 class="autor">Blackpink</h4>
           <div class="music-control">
-          <i class="fa-solid fa-backward fa-xl"></i>
-          <i class="fa-solid fa-play fa-xl" id="pause-icon"></i>
-          <i class="fa-solid fa-forward fa-xl"></i>
+          <button type="button" id="backward-button"><i class="fa-solid fa-backward fa-xl"></i></button>
+          <button type="button" id="play-button"><i class="fa-solid fa-play fa-xl" id="pause-icon"></i></button>
+          <button type="button" id="foward-button"><i class="fa-solid fa-forward fa-xl"></i></button>
           </div>
           
         </div>
@@ -58,5 +61,7 @@
 
         </div>
       </div>
+   
 </body>
+
 </html>
