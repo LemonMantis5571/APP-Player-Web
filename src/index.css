@@ -83,6 +83,36 @@ hr{
 .autor{
     color: rgb(90, 88, 88) !important;
 }
+
+.fa-play{
+    position: relative;
+    cursor: pointer;
+}
+
+.fa-pause {
+    position: relative;
+    cursor: pointer;
+    width: 18px;
+}
+
+.fa-play:hover{
+    color: rgb(224, 218, 218);
+}
+
+.fa-pause:hover{
+    color: rgb(224, 218, 218);
+}
+.fa-forward{
+    position: relative;
+    left: 15px;
+    
+}
+
+.fa-backward{
+    position: relative;
+    right: 15px;
+}
+
 .iconify--ic {
     padding: 5px 5px 5px 5px;
     cursor: pointer;
@@ -92,16 +122,6 @@ hr{
     color: rgb(212, 207, 207);
 
 }
-
-.iconify--entypo {
-    padding: 5px 5px 5px 5px;
-    cursor: pointer;
-}
-
-.iconify--entypo:hover{
-    color: rgb(212, 207, 207);
-}
-
 .playlist-icon{
     position: relative;
     bottom: 21rem;
@@ -110,7 +130,7 @@ hr{
 
 .duration-control{
     margin: 0%;
-    height: 70px;
+    height: 90px;
     width: 350px;
     background-color: #e5e5f0;
 }
