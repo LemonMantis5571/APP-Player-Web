@@ -43,11 +43,11 @@ const backwardSong = () => {
 };
 
 function loadSong(song) {
-    audio.src = `./assets/${song.band}.mp3`;
+    audio.src = `assets/${song.band}.mp3`;
     songName.innerHTML = `${song.songName}`;
     bandName.innerHTML = `${song.band}`;
     songQuote.innerHTML = `${song.quote}`;
-    img.src = `./imgs/${song.band}.webp`;
+    img.src = `imgs/${song.band}.webp`;
 }
 
 
