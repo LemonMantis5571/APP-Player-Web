@@ -47,7 +47,7 @@ function loadSong(song) {
     songName.innerHTML = `${song.songName}`;
     bandName.innerHTML = `${song.band}`;
     songQuote.innerHTML = `${song.quote}`;
-    img.src = `assets/${song.band}.webp`;
+    img.src = `imgs/${song.band}.webp`;
 }
 
 
