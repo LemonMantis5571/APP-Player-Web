@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+body {
+    background-color: rgb(22, 21, 21);
+    width: 100vw;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+}
+
+.card {
+    background-color: #ececf3;
+    box-shadow: 10px 10px 10px 10px #0A0A08;
+    width: 350px;
+}
+
+.footer {
+    background-color: #e5e5f0;;
+}
+
+
+@media (max-width: 375px) {
+    .card {
+        width: 16rem;
+    }
+}
