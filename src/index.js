@@ -11,11 +11,13 @@ const songs = [
     {
         songName: 'Lovesick Girls',
         band: 'Blackpink',
+        fileName: 'blackpink',
         quote: 'We are still looking for love'
     },
     {
         songName: "Can't Control Myself",
         band: 'Taeyeon',
+        fileName: 'taeyeon',
         quote: "It's Too late"
     },
 ];
@@ -29,7 +31,7 @@ const fowardSong = () => {
     if (songIndex < songs.length - 1) {
         songIndex++;
     } else {
-   
+
         songIndex = 0;
     }
 };
@@ -43,11 +45,12 @@ const backwardSong = () => {
 };
 
 function loadSong(song) {
-    audio.src = `assets/${song.band}.mp3`;
+    audio.src = `../src/assets/${song.fileName}.mp3`;
+    img.src = `../src/imgs/${song.fileName}.webp`;
     songName.innerHTML = `${song.songName}`;
     bandName.innerHTML = `${song.band}`;
     songQuote.innerHTML = `${song.quote}`;
-    img.src = `imgs/${song.band}.webp`;
+
 }
 
 
