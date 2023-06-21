@@ -9,13 +9,13 @@
   <link rel="stylesheet" href="./css/index.css">
   <script src="https://kit.fontawesome.com/2891e7bec4.js" crossorigin="anonymous"></script>
   <script src="https://cdn.tailwindcss.com"></script>
-  <script type="module" src="index.js"></script>
 </head>
 
 <body>
-  <div class="flex justify-center items-center w-full h-full">
-    <div class="card flex flex-col h-4/6 sm:w-80 lg:w-96 relative">
-      <div class="w-full h-full">
+  <div class="flex flex-row justify-center items-center w-full h-full">
+
+    <div class="card flex flex-col h-4/6 sm:w-80 md:w-80 lg:w-96">
+      <div class="w-full h-full relative">
         <i class="playlist-icon z-10 absolute text-white hover:cursor-pointer hover:text-red-500 right-0 py-3 px-2 hidden sm:hidden md:block lg:block"
           id="playlist-icon">
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
@@ -24,25 +24,58 @@
             <path fill="currentColor" d="M3 10h11v2H3zm0-4h11v2H3zm0 8h7v2H3zm13-1v8l6-4z"></path>
           </svg>
         </i>
-        <img class="w-full h-full object-cover" id="artistPicture" alt="artist-picture" />
+
+        <img class="w-full h-full object-cover object-center" id="artistPicture" alt="artist-picture" />
       </div>
-      <div class="music-details flex flex-col w-full h-full justify-center items-center gap-5">
-        <div class="music description flex flex-col gap-5 py-8">
-          <h2 class="font-semibold text-2xl text-center" id="songName"></h2>
+
+      <div class="music-details flex flex-col w-full h-full justify-center items-center gap-4">
+
+        <div class="music description flex flex-col gap-4 py-6">
+          <h2 class="font-semibold text-2xl text-center" id="songName"> </h2>
+          <i class="fa-solid fa-music text-center text-xl"></i>
           <h4 class="font-bold text-xl text-gray-500 text-center" id="bandName"></h4>
         </div>
+
         <div class="music-controls flex gap-8 text-xl text-center">
           <i class="fa-solid fa-backward hover:text-blue-400 hover:cursor-pointer" id="backwardButton"></i>
           <i class="fa-solid fa-play hover:text-blue-400 hover:cursor-pointer" id="playbutton"></i>
           <i class="fa-solid fa-forward hover:text-blue-400 hover:cursor-pointer" id="fowardButton"></i>
         </div>
+
         <div class="footer w-full h-full text-center">
           <p class="text-lg py-8 font-semibold" id="quote"></p>
         </div>
+
       </div>
+
+      <input class="h-1 bg-blue-400 rounded-full w-full appearance-none" type="range" min="1" max="100" value="0"
+        id="durationController">
+
       <audio id="musicPlayer"></audio>
     </div>
+
+    <div class="flex flex-col h-4/6 hidden sm:w-44  md:w-48 lg:w-56 text-white text-lg font-semibold text-center" id="playlist">
+      <ul class="flex flex-col gap-4 bg-blue-400 rounded p-4">
+        <li class="First-song px-2 py-1 rounded hover:bg-blue-500 cursor-pointer" id="1">
+          Blackpink - Lovesick Girls
+        </li>
+        <hr class="border-gray-300">
+        <li class="Second-song px-2 py-1 rounded hover:bg-blue-500 cursor-pointer" id="2">
+          Taeyeon - Can't Control Myself
+        </li >
+        <hr class="border-gray-300">
+        <li class="Third-song px-2 py-1 rounded hover:bg-blue-500 cursor-pointer" id="3">
+          Another Now - Vapors
+        </li>
+        <hr class="border-gray-300">
+        <li class="Fourth-song px-2 py-1 rounded hover:bg-blue-500 cursor-pointer" id="4">
+          Pastel Ghost - Dark Beach
+        </li>
+      </ul>
+    </div>
   </div>
+
 </body>
+<script type="module" src="index.js"></script>
 
 </html>
