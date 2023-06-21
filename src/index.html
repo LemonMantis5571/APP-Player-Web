@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <div class="flex flex-row justify-center items-center w-full h-full">
+  <div class="flex flex-col sm:flex-row justify-center items-center w-full h-full">
 
     <div class="card flex flex-col h-4/6 sm:w-80 md:w-80 lg:w-96">
       <div class="w-full h-full relative">
@@ -54,7 +54,7 @@
       <audio id="musicPlayer"></audio>
     </div>
 
-    <div class="flex flex-col h-4/6 hidden sm:w-44  md:w-48 lg:w-56 text-white text-lg font-semibold text-center" id="playlist">
+    <div class="flex flex-col h-4/6 hidden sm:w-44 md:w-48 lg:w-56 text-white text-lg font-semibold text-center" id="playlist">
       <ul class="flex flex-col gap-4 bg-blue-400 rounded p-4">
         <li class="First-song px-2 py-1 rounded hover:bg-blue-500 cursor-pointer" id="1">
           Blackpink - Lovesick Girls
@@ -62,7 +62,7 @@
         <hr class="border-gray-300">
         <li class="Second-song px-2 py-1 rounded hover:bg-blue-500 cursor-pointer" id="2">
           Taeyeon - Can't Control Myself
-        </li >
+        </li>
         <hr class="border-gray-300">
         <li class="Third-song px-2 py-1 rounded hover:bg-blue-500 cursor-pointer" id="3">
           Another Now - Vapors
@@ -74,7 +74,6 @@
       </ul>
     </div>
   </div>
-
 </body>
 <script type="module" src="index.js"></script>
 
